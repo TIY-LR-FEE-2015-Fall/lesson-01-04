@@ -21,6 +21,24 @@ main {
   background: #999;
 }
 
+/* Grid Things */
+.container {
+  max-width: 1040px;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.three-up {
+  flex: 1 0 calc(100% / 3 - 40px);
+  margin: 20px;
+}
+
+article {
+  background: white;
+}
+
 .site-info {
   overflow: auto;
   background: #bbb;
