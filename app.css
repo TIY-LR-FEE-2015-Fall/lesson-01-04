@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top-nav {
+  overflow: hidden;
+  height: 3rem;
+  background: #4219a8;
+}
+
+main {
+  overflow: auto;
+  flex: 1 0;
+  background: #999;
+}
+
+.site-info {
+  overflow: auto;
+  background: #bbb;
+}
+
+.footer-nav {
+  overflow: auto;
+  background: #000;
+}
