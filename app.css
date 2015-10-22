@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  color: rgba(0,0,0,0);
 }
 
 body {
@@ -19,6 +18,28 @@ main {
   overflow: auto;
   flex: 1 0;
   background: #999;
+}
+
+header {
+  overflow: hidden;
+  position: relative;
+  height: calc(100vh - 5rem);
+  color: white;
+
+  background: black;
+}
+
+header .container {
+  position: relative;
+  top: 60%;
+}
+
+.hero {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 3rem;
 }
 
 /* Grid Things */
@@ -47,4 +68,5 @@ article {
 .footer-nav {
   overflow: auto;
   background: #000;
+  color: white;
 }
