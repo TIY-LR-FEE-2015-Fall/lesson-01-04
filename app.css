@@ -11,12 +11,14 @@ body {
 .top-nav {
   overflow: hidden;
   height: 3rem;
+
   background: #4219a8;
 }
 
 main {
   overflow: auto;
   flex: 1 0;
+
   background: #999;
 }
 
@@ -24,9 +26,11 @@ header {
   overflow: hidden;
   position: relative;
   height: calc(100vh - 5rem);
-  color: white;
 
-  background: black;
+  color: white;
+  background: url(http://lorempixel.com/g/1000/1000/technics)
+    no-repeat center center fixed;
+  background-size: cover;
 }
 
 header .container {
@@ -40,6 +44,36 @@ header .container {
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 3rem;
+
+  text-align: center;
+}
+
+.hero button {
+  padding: 0;
+  background: none;
+  font-size: 1.2em;
+  border: solid rgba(100, 100, 100, 0.5) 0.5rem;
+}
+
+.hero button span {
+  padding: .5rem;
+  background: #4219a8;
+
+  display: block;
+}
+
+.three-up {
+  padding-top: 1rem;
+}
+
+.three-up .icon {
+  border-radius: 50%;
+  background: #bbb;
+  border: 1px white solid;
+}
+
+header .three-up:hover {
+  background: rgba(100, 100, 100, 0.5);
 }
 
 /* Grid Things */
@@ -54,6 +88,7 @@ header .container {
 .three-up {
   flex: 1 0 calc(100% / 3 - 40px);
   margin: 20px;
+  text-align: center;
 }
 
 article {
