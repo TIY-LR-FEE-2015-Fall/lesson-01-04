@@ -27,10 +27,11 @@ header {
   position: relative;
   height: calc(100vh - 5rem);
 
-  color: white;
-  background: url(http://lorempixel.com/g/1000/1000/technics)
+  background: url("http://lorempixel.com/g/1000/1000/technics")
     no-repeat center center fixed;
   background-size: cover;
+
+  color: white;
 }
 
 header .container {
@@ -51,18 +52,19 @@ header .container {
 button {
   margin-top: 1rem;
   padding: 0;
-  background: none;
-  font-size: 1.2em;
   border: solid rgba(100, 100, 100, 0.5) 0.5rem;
 
+  background: none;
+
   color: white;
+  font-size: 1.2em;
 }
 
 button span {
-  padding: .5rem;
+  display: block;
+  padding: 0.5rem;
   background: #4219a8;
 
-  display: block;
 }
 
 .three-up {
@@ -70,9 +72,10 @@ button span {
 }
 
 .three-up .icon {
-  border-radius: 50%;
-  background: #bbb;
   border: 1px white solid;
+  border-radius: 50%;
+
+  background: #bbb;
 }
 
 header .three-up:hover {
@@ -80,17 +83,19 @@ header .three-up:hover {
 }
 
 /* Grid Things */
-.container {
-  max-width: 1040px;
-  margin: auto;
 
+.container {
   display: flex;
   flex-wrap: wrap;
+
+  margin: auto;
+  max-width: 1040px;
 }
 
 .three-up {
-  flex: 1 0 calc(100% / 3 - 40px);
   margin: 20px;
+
+  flex: 1 0 calc(100% / 3 - 40px);
   text-align: center;
 }
 
@@ -100,15 +105,17 @@ article {
 
 .site-info {
   overflow: auto;
+  padding: 2rem;
+
   background: #bbb;
 
   text-align: center;
-  padding: 2rem;
 }
 
 .site-info p {
-  font-size: 1.6rem;
   margin: 0;
+
+  font-size: 1.6rem;
 }
 
 .footer-nav {
